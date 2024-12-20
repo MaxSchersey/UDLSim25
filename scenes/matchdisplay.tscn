@@ -1,0 +1,363 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwsv6wrshqmwk"]
+
+[ext_resource type="Script" path="res://scripts/matchdisplay.gd" id="1_gkagd"]
+
+[sub_resource type="SystemFont" id="SystemFont_c0pxv"]
+font_names = PackedStringArray("Segoe UI")
+
+[sub_resource type="LabelSettings" id="LabelSettings_s0nhl"]
+font = SubResource("SystemFont_c0pxv")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_dj5da"]
+
+[node name="Match Display" type="Node2D"]
+script = ExtResource("1_gkagd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Quickplay"
+label_settings = SubResource("LabelSettings_s0nhl")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 200)
+layout_mode = 0
+offset_top = 150.0
+offset_right = 1920.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_dj5da")
+theme_override_font_sizes/font_size = 50
+text = "Match In Progress"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_top = 280.0
+offset_right = 1920.0
+offset_bottom = 930.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1 Name" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 4
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Match Score" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect2"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2 Name" type="Label" parent="VBoxContainer/HBoxContainer/ColorRect3"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 4
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1 Singles" type="Label" parent="VBoxContainer/HBoxContainer2/ColorRect"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Singles Score" type="Label" parent="VBoxContainer/HBoxContainer2/ColorRect2"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2 Singles" type="Label" parent="VBoxContainer/HBoxContainer2/ColorRect3"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1 FS" type="Label" parent="VBoxContainer/HBoxContainer3/ColorRect"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FS Score" type="Label" parent="VBoxContainer/HBoxContainer3/ColorRect2"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2 FS" type="Label" parent="VBoxContainer/HBoxContainer3/ColorRect3"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1 Stamina" type="Label" parent="VBoxContainer/HBoxContainer4/ColorRect"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Stamina Score" type="Label" parent="VBoxContainer/HBoxContainer4/ColorRect2"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2 Stamina" type="Label" parent="VBoxContainer/HBoxContainer4/ColorRect3"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1 Doubles" type="Label" parent="VBoxContainer/HBoxContainer5/ColorRect"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 4
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Doubles Score" type="Label" parent="VBoxContainer/HBoxContainer5/ColorRect2"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2 Doubles" type="Label" parent="VBoxContainer/HBoxContainer5/ColorRect3"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 4
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1 Squads" type="Label" parent="VBoxContainer/HBoxContainer6/ColorRect"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 4
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/HBoxContainer6"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Squads Score" type="Label" parent="VBoxContainer/HBoxContainer6/ColorRect2"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect3" type="ColorRect" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2 Squads" type="Label" parent="VBoxContainer/HBoxContainer6/ColorRect3"]
+layout_mode = 0
+offset_right = 760.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 4
+
+[node name="Button" type="Button" parent="."]
+offset_left = 810.0
+offset_top = 950.0
+offset_right = 1110.0
+offset_bottom = 1050.0
+
+[node name="Label" type="Label" parent="Button"]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

@@ -1,0 +1,348 @@
+[gd_scene load_steps=4 format=3 uid="uid://drv60wguxwaw7"]
+
+[ext_resource type="Script" path="res://scripts/leagueschedule.gd" id="1_l4cxc"]
+
+[sub_resource type="SystemFont" id="SystemFont_j5b1q"]
+font_names = PackedStringArray("Segoe UI")
+
+[sub_resource type="LabelSettings" id="LabelSettings_nt68w"]
+font = SubResource("SystemFont_j5b1q")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[node name="Leagueschedule" type="Node2D"]
+script = ExtResource("1_l4cxc")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "League Schedule"
+label_settings = SubResource("LabelSettings_nt68w")
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Return to Season Hub"
+
+[node name="WeekButtons" type="HBoxContainer" parent="."]
+offset_top = 150.0
+offset_right = 1920.0
+offset_bottom = 330.0
+
+[node name="Week1" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 1"
+
+[node name="Week2" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 2"
+
+[node name="Week3" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 3"
+
+[node name="Week4" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 4"
+
+[node name="Week5" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 5"
+
+[node name="Week6" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 6"
+
+[node name="Week7" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 7"
+
+[node name="Week8" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 8"
+
+[node name="Week9" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 9"
+
+[node name="Week10" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 10"
+
+[node name="Week11" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 11"
+
+[node name="Week12" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week 12"
+
+[node name="Week13" type="Button" parent="WeekButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Playoffs"
+
+[node name="First10" type="VBoxContainer" parent="."]
+offset_top = 320.0
+offset_right = 960.0
+offset_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match1" type="Label" parent="First10/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect2" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match2" type="Label" parent="First10/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect3" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match3" type="Label" parent="First10/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect4" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match4" type="Label" parent="First10/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect5" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match5" type="Label" parent="First10/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect6" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match6" type="Label" parent="First10/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect7" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match7" type="Label" parent="First10/ColorRect7"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect8" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match8" type="Label" parent="First10/ColorRect8"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect9" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match9" type="Label" parent="First10/ColorRect9"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect10" type="ColorRect" parent="First10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match10" type="Label" parent="First10/ColorRect10"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="Last10" type="VBoxContainer" parent="."]
+offset_left = 960.0
+offset_top = 320.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match1" type="Label" parent="Last10/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect2" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match2" type="Label" parent="Last10/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect3" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match3" type="Label" parent="Last10/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect4" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match4" type="Label" parent="Last10/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect5" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match5" type="Label" parent="Last10/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect6" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match6" type="Label" parent="Last10/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect7" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match7" type="Label" parent="Last10/ColorRect7"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect8" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match8" type="Label" parent="Last10/ColorRect8"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect9" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match9" type="Label" parent="Last10/ColorRect9"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[node name="ColorRect10" type="ColorRect" parent="Last10"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match10" type="Label" parent="Last10/ColorRect10"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Wk1 - Team1 - Score"
+
+[connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]
+[connection signal="button_up" from="WeekButtons/Week1" to="." method="_on_week_1_button_up"]
+[connection signal="button_up" from="WeekButtons/Week2" to="." method="_on_week_2_button_up"]
+[connection signal="button_up" from="WeekButtons/Week3" to="." method="_on_week_3_button_up"]
+[connection signal="button_up" from="WeekButtons/Week4" to="." method="_on_week_4_button_up"]
+[connection signal="button_up" from="WeekButtons/Week5" to="." method="_on_week_5_button_up"]
+[connection signal="button_up" from="WeekButtons/Week6" to="." method="_on_week_6_button_up"]
+[connection signal="button_up" from="WeekButtons/Week7" to="." method="_on_week_7_button_up"]
+[connection signal="button_up" from="WeekButtons/Week8" to="." method="_on_week_8_button_up"]
+[connection signal="button_up" from="WeekButtons/Week9" to="." method="_on_week_9_button_up"]
+[connection signal="button_up" from="WeekButtons/Week10" to="." method="_on_week_10_button_up"]
+[connection signal="button_up" from="WeekButtons/Week11" to="." method="_on_week_11_button_up"]
+[connection signal="button_up" from="WeekButtons/Week12" to="." method="_on_week_12_button_up"]
+[connection signal="button_up" from="WeekButtons/Week13" to="." method="_on_week_13_button_up"]

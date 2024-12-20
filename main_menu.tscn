@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1rqieth7l7gh"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_bjc86"]
+
+[sub_resource type="SystemFont" id="SystemFont_c0pxv"]
+font_names = PackedStringArray("Segoe UI")
+
+[sub_resource type="LabelSettings" id="LabelSettings_s0nhl"]
+font = SubResource("SystemFont_c0pxv")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource("1_bjc86")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "SmashCPU Ultimate Draft League 
+Simulator 2025"
+label_settings = SubResource("LabelSettings_s0nhl")
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(1920, 680)
+offset_top = 280.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Button1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Start New Season (Coming Soon!)"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Quickplay"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Feature Roadmap"
+
+[node name="Button4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "About"
+
+[connection signal="button_up" from="VBoxContainer/Button1" to="." method="_on_button_1_button_up"]
+[connection signal="button_up" from="VBoxContainer/Button2" to="." method="_on_button_2_button_up"]
+[connection signal="button_up" from="VBoxContainer/Button3" to="." method="_on_button_3_button_up"]
+[connection signal="button_up" from="VBoxContainer/Button4" to="." method="_on_button_4_button_up"]

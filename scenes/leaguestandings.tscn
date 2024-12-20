@@ -1,0 +1,752 @@
+[gd_scene load_steps=4 format=3 uid="uid://csst8yxdmi6v8"]
+
+[ext_resource type="Script" path="res://scripts/leaguestandings.gd" id="1_h0xee"]
+
+[sub_resource type="SystemFont" id="SystemFont_c0pxv"]
+font_names = PackedStringArray("Segoe UI")
+
+[sub_resource type="LabelSettings" id="LabelSettings_1wc3i"]
+font = SubResource("SystemFont_c0pxv")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[node name="Leaguestandings" type="Node2D"]
+script = ExtResource("1_h0xee")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "League Standings"
+label_settings = SubResource("LabelSettings_1wc3i")
+horizontal_alignment = 1
+
+[node name="Burrito" type="VBoxContainer" parent="."]
+offset_top = 200.0
+offset_right = 384.0
+offset_bottom = 640.0
+
+[node name="ColorRect" type="ColorRect" parent="Burrito"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="Burrito/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "BURRITO DIVISION"
+
+[node name="ColorRect2" type="ColorRect" parent="Burrito"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="Burrito/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="Burrito"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="Burrito/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="Burrito"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="Burrito/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="Burrito"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="Burrito/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="Burrito"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="Burrito/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="Corn" type="VBoxContainer" parent="."]
+offset_left = 384.0
+offset_top = 200.0
+offset_right = 768.0
+offset_bottom = 640.0
+
+[node name="ColorRect" type="ColorRect" parent="Corn"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="Corn/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "CORN DIVISION"
+
+[node name="ColorRect2" type="ColorRect" parent="Corn"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="Corn/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="Corn"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="Corn/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="Corn"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="Corn/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="Corn"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="Corn/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="Corn"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="Corn/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="Apple" type="VBoxContainer" parent="."]
+offset_top = 640.0
+offset_right = 384.0
+offset_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="Apple"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="Apple/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "APPLE DIVISION"
+
+[node name="ColorRect2" type="ColorRect" parent="Apple"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="Apple/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="Apple"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="Apple/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="Apple"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="Apple/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="Apple"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="Apple/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="Apple"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="Apple/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="Carbomb" type="VBoxContainer" parent="."]
+offset_left = 384.0
+offset_top = 640.0
+offset_right = 768.0
+offset_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="Carbomb"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="Carbomb/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "CARBOMB DIVISION"
+
+[node name="ColorRect2" type="ColorRect" parent="Carbomb"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="Carbomb/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="Carbomb"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="Carbomb/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="Carbomb"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="Carbomb/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="Carbomb"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="Carbomb/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="Carbomb"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="Carbomb/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="Alpha" type="VBoxContainer" parent="."]
+offset_left = 768.0
+offset_top = 200.0
+offset_right = 1152.0
+offset_bottom = 640.0
+
+[node name="ColorRect" type="ColorRect" parent="Alpha"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="Alpha/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "ALPHA CONFERENCE WILD CARD"
+
+[node name="ColorRect2" type="ColorRect" parent="Alpha"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="Alpha/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="Alpha"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="Alpha/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="Alpha"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="Alpha/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="Alpha"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="Alpha/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="Alpha"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="Alpha/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="Omega" type="VBoxContainer" parent="."]
+offset_left = 768.0
+offset_top = 640.0
+offset_right = 1152.0
+offset_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="Omega"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="Omega/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "OMEGA CONFERENCE WILD CARD"
+
+[node name="ColorRect2" type="ColorRect" parent="Omega"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="Omega/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="Omega"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="Omega/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="Omega"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="Omega/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="Omega"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="Omega/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="Omega"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="Omega/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="WildWest" type="VBoxContainer" parent="."]
+offset_left = 1152.0
+offset_top = 200.0
+offset_right = 1536.0
+offset_bottom = 640.0
+
+[node name="ColorRect" type="ColorRect" parent="WildWest"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="WildWest/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "WILD WEST DIVISION"
+
+[node name="ColorRect2" type="ColorRect" parent="WildWest"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="WildWest/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="WildWest"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="WildWest/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="WildWest"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="WildWest/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="WildWest"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="WildWest/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="WildWest"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="WildWest/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="DeepSouth" type="VBoxContainer" parent="."]
+offset_left = 1536.0
+offset_top = 200.0
+offset_right = 1920.0
+offset_bottom = 640.0
+
+[node name="ColorRect" type="ColorRect" parent="DeepSouth"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="DeepSouth/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "DEEP SOUTH DIVISION"
+
+[node name="ColorRect2" type="ColorRect" parent="DeepSouth"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="DeepSouth/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="DeepSouth"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="DeepSouth/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="DeepSouth"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="DeepSouth/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="DeepSouth"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="DeepSouth/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="DeepSouth"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="DeepSouth/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="BigEast" type="VBoxContainer" parent="."]
+offset_left = 1152.0
+offset_top = 640.0
+offset_right = 1536.0
+offset_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="BigEast"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="BigEast/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "BIG EAST DIVISION"
+
+[node name="ColorRect2" type="ColorRect" parent="BigEast"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="BigEast/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="BigEast"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="BigEast/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="BigEast"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="BigEast/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="BigEast"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="BigEast/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="BigEast"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="BigEast/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="Ikea" type="VBoxContainer" parent="."]
+offset_left = 1536.0
+offset_top = 640.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="Ikea"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Header" type="Label" parent="Ikea/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "IKEA DIVISION"
+
+[node name="ColorRect2" type="ColorRect" parent="Ikea"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team1" type="Label" parent="Ikea/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect3" type="ColorRect" parent="Ikea"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team2" type="Label" parent="Ikea/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect4" type="ColorRect" parent="Ikea"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team3" type="Label" parent="Ikea/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect5" type="ColorRect" parent="Ikea"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team4" type="Label" parent="Ikea/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="ColorRect6" type="ColorRect" parent="Ikea"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Team5" type="Label" parent="Ikea/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Team1 - Record"
+
+[node name="Button2" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Return to Season Hub"
+
+[connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]

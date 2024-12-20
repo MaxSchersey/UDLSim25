@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqra6u2ln6q4r"]
+
+[ext_resource type="Script" path="res://click2return.gd" id="1_40x8s"]
+
+[sub_resource type="SystemFont" id="SystemFont_c0pxv"]
+font_names = PackedStringArray("Segoe UI")
+
+[sub_resource type="LabelSettings" id="LabelSettings_s0nhl"]
+font = SubResource("SystemFont_c0pxv")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_1hbtt"]
+font_names = PackedStringArray("Segoe UI")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_40x8s")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "SmashCPU Ultimate Draft League 
+Simulator 2025"
+label_settings = SubResource("LabelSettings_s0nhl")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect"]
+offset_top = 280.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_1hbtt")
+theme_override_font_sizes/font_size = 25
+text = "Patch Notes/Upcoming Features:
+
+**PHASE 1 CHANGES**
+- Season Mode
+- Lineup Management
+- Dynamic Schedules
+- Scorecard Archive
+- Live Standings
+
+**PHASE 2 CHANGES**
+- Conference Record/Divisional Record Tiebreakers
+- Forced Bench for Each Slot
+- Free Agency
+- Trading
+
+**PHASE 3 CHANGES**
+- Opponent Coach AI 
+- Preseason Draft
+- Saving
+
+Click to return to main menu"
+horizontal_alignment = 1

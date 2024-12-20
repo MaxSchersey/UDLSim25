@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5xnf5ex64wtw"]
+
+[ext_resource type="Script" path="res://scripts/click2return.gd" id="1_3gnbg"]
+
+[sub_resource type="SystemFont" id="SystemFont_c0pxv"]
+font_names = PackedStringArray("Segoe UI")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_gxqt4"]
+font = SubResource("SystemFont_c0pxv")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_qiydl"]
+font_names = PackedStringArray("Segoe UI")
+
+[node name="Winner" type="Node2D"]
+script = ExtResource("1_3gnbg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "You have won the UDL Championship!!!!!!"
+label_settings = SubResource("LabelSettings_gxqt4")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_top = 280.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_qiydl")
+theme_override_font_sizes/font_size = 25
+text = "
+Click to return to main menu"
+horizontal_alignment = 1

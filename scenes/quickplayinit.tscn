@@ -1,0 +1,235 @@
+[gd_scene load_steps=5 format=3 uid="uid://cuu64lrm8f836"]
+
+[ext_resource type="Script" path="res://scripts/quickplayinit.gd" id="1_kg7u7"]
+
+[sub_resource type="SystemFont" id="SystemFont_c0pxv"]
+font_names = PackedStringArray("Segoe UI")
+
+[sub_resource type="LabelSettings" id="LabelSettings_s0nhl"]
+font = SubResource("SystemFont_c0pxv")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_dj5da"]
+
+[node name="QuickplayInit" type="Node2D"]
+script = ExtResource("1_kg7u7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Quickplay"
+label_settings = SubResource("LabelSettings_s0nhl")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 200)
+layout_mode = 0
+offset_top = 150.0
+offset_right = 1920.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_dj5da")
+theme_override_font_sizes/font_size = 50
+text = "Select Your Teams"
+horizontal_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="."]
+offset_left = 50.0
+offset_top = 450.0
+offset_right = 650.0
+offset_bottom = 650.0
+theme_override_font_sizes/font_size = 50
+alignment = 1
+text_overrun_behavior = 4
+item_count = 40
+popup/item_0/text = "Arizona Almighty"
+popup/item_1/text = "Snake Oli Merchants"
+popup/item_1/id = 1
+popup/item_2/text = "6:16 in Seattle"
+popup/item_2/id = 2
+popup/item_3/text = "Baba Keke Jiji and Fofo"
+popup/item_3/id = 3
+popup/item_4/text = "Hardcore Parkour"
+popup/item_4/id = 4
+popup/item_5/text = "Meet n' Falc Kingdom"
+popup/item_5/id = 5
+popup/item_6/text = "BIG PLACEHOLDER"
+popup/item_6/id = 6
+popup/item_7/text = "Dream Big, Fart Loud"
+popup/item_7/id = 7
+popup/item_8/text = "Pokeymons"
+popup/item_8/id = 8
+popup/item_9/text = "Coffin Fitters"
+popup/item_9/id = 9
+popup/item_10/text = "In the Flow State"
+popup/item_10/id = 10
+popup/item_11/text = "Brendini's Genies"
+popup/item_11/id = 11
+popup/item_12/text = "NPC Adventure Rescue Squad"
+popup/item_12/id = 12
+popup/item_13/text = "Stardenburdenhardenbart"
+popup/item_13/id = 13
+popup/item_14/text = "BlazeBallin: Peak Fiction"
+popup/item_14/id = 14
+popup/item_15/text = "Da Frizzadonkeys"
+popup/item_15/id = 15
+popup/item_16/text = "On Mah Son"
+popup/item_16/id = 16
+popup/item_17/text = "The Ballin' Association"
+popup/item_17/id = 17
+popup/item_18/text = "The Bone Rattlers"
+popup/item_18/id = 18
+popup/item_19/text = "Based Opinions"
+popup/item_19/id = 19
+popup/item_20/text = "Saturday Morning Cartoons"
+popup/item_20/id = 20
+popup/item_21/text = "Taskmasters III"
+popup/item_21/id = 21
+popup/item_22/text = "Goku's Katnisses"
+popup/item_22/id = 22
+popup/item_23/text = "Over-Day Out Death"
+popup/item_23/id = 23
+popup/item_24/text = "DondoIt"
+popup/item_24/id = 24
+popup/item_25/text = "The Logical Endpoint of Man's Hubris"
+popup/item_25/id = 25
+popup/item_26/text = "Toilet Crusaders"
+popup/item_26/id = 26
+popup/item_27/text = "The Marios"
+popup/item_27/id = 27
+popup/item_28/text = "Wagwan University"
+popup/item_28/id = 28
+popup/item_29/text = "Orange You Glad"
+popup/item_29/id = 29
+popup/item_30/text = "Modified Memories"
+popup/item_30/id = 30
+popup/item_31/text = "Mike's Money Makers"
+popup/item_31/id = 31
+popup/item_32/text = "Trickle Down-Smash Economics"
+popup/item_32/id = 32
+popup/item_33/text = "Nine Lives in Ninjutsu"
+popup/item_33/id = 33
+popup/item_34/text = "Mom Doers"
+popup/item_34/id = 34
+popup/item_35/text = "Suomi Blimp Squadron"
+popup/item_35/id = 35
+popup/item_36/text = "A Maglev into the Inner Machinations of God"
+popup/item_36/id = 36
+popup/item_37/text = "Smeten"
+popup/item_37/id = 37
+popup/item_38/text = "Filidutter"
+popup/item_38/id = 38
+popup/item_39/text = "The Sheikah Shadows"
+popup/item_39/id = 39
+
+[node name="OptionButton2" type="OptionButton" parent="."]
+offset_left = 1270.0
+offset_top = 450.0
+offset_right = 1870.0
+offset_bottom = 650.0
+theme_override_font_sizes/font_size = 50
+alignment = 1
+text_overrun_behavior = 4
+item_count = 40
+popup/item_0/text = "Arizona Almighty"
+popup/item_1/text = "Snake Oli Merchants"
+popup/item_1/id = 1
+popup/item_2/text = "6:16 in Seattle"
+popup/item_2/id = 2
+popup/item_3/text = "Baba Keke Jiji and Fofo"
+popup/item_3/id = 3
+popup/item_4/text = "Hardcore Parkour"
+popup/item_4/id = 4
+popup/item_5/text = "Meet n' Falc Kingdom"
+popup/item_5/id = 5
+popup/item_6/text = "BIG PLACEHOLDER"
+popup/item_6/id = 6
+popup/item_7/text = "Dream Big, Fart Loud"
+popup/item_7/id = 7
+popup/item_8/text = "Pokeymons"
+popup/item_8/id = 8
+popup/item_9/text = "Coffin Fitters"
+popup/item_9/id = 9
+popup/item_10/text = "In the Flow State"
+popup/item_10/id = 10
+popup/item_11/text = "Brendini's Genies"
+popup/item_11/id = 11
+popup/item_12/text = "NPC Adventure Rescue Squad"
+popup/item_12/id = 12
+popup/item_13/text = "Stardenburdenhardenbart"
+popup/item_13/id = 13
+popup/item_14/text = "BlazeBallin: Peak Fiction"
+popup/item_14/id = 14
+popup/item_15/text = "Da Frizzadonkeys"
+popup/item_15/id = 15
+popup/item_16/text = "On Mah Son"
+popup/item_16/id = 16
+popup/item_17/text = "The Ballin' Association"
+popup/item_17/id = 17
+popup/item_18/text = "The Bone Rattlers"
+popup/item_18/id = 18
+popup/item_19/text = "Based Opinions"
+popup/item_19/id = 19
+popup/item_20/text = "Saturday Morning Cartoons"
+popup/item_20/id = 20
+popup/item_21/text = "Taskmasters III"
+popup/item_21/id = 21
+popup/item_22/text = "Goku's Katnisses"
+popup/item_22/id = 22
+popup/item_23/text = "Over-Day Out Death"
+popup/item_23/id = 23
+popup/item_24/text = "DondoIt"
+popup/item_24/id = 24
+popup/item_25/text = "The Logical Endpoint of Man's Hubris"
+popup/item_25/id = 25
+popup/item_26/text = "Toilet Crusaders"
+popup/item_26/id = 26
+popup/item_27/text = "The Marios"
+popup/item_27/id = 27
+popup/item_28/text = "Wagwan University"
+popup/item_28/id = 28
+popup/item_29/text = "Orange You Glad"
+popup/item_29/id = 29
+popup/item_30/text = "Modified Memories"
+popup/item_30/id = 30
+popup/item_31/text = "Mike's Money Makers"
+popup/item_31/id = 31
+popup/item_32/text = "Trickle Down-Smash Economics"
+popup/item_32/id = 32
+popup/item_33/text = "Nine Lives in Ninjutsu"
+popup/item_33/id = 33
+popup/item_34/text = "Mom Doers"
+popup/item_34/id = 34
+popup/item_35/text = "Suomi Blimp Squadron"
+popup/item_35/id = 35
+popup/item_36/text = "A Maglev into the Inner Machinations of God"
+popup/item_36/id = 36
+popup/item_37/text = "Smeten"
+popup/item_37/id = 37
+popup/item_38/text = "Filidutter"
+popup/item_38/id = 38
+popup/item_39/text = "The Sheikah Shadows"
+popup/item_39/id = 39
+
+[node name="Button" type="Button" parent="."]
+offset_left = 660.0
+offset_top = 800.0
+offset_right = 1260.0
+offset_bottom = 1000.0
+theme_override_font_sizes/font_size = 80
+text = "Begin Match"
+
+[node name="Button2" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Return to Main"
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]

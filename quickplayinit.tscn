@@ -1,0 +1,82 @@
+[gd_scene load_steps=5 format=3 uid="uid://cuu64lrm8f836"]
+
+[ext_resource type="Script" path="res://quickplayinit.gd" id="1_2ucda"]
+
+[sub_resource type="SystemFont" id="SystemFont_c0pxv"]
+font_names = PackedStringArray("Segoe UI")
+
+[sub_resource type="LabelSettings" id="LabelSettings_s0nhl"]
+font = SubResource("SystemFont_c0pxv")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_dj5da"]
+
+[node name="QuickplayInit" type="Node2D"]
+script = ExtResource("1_2ucda")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Quickplay"
+label_settings = SubResource("LabelSettings_s0nhl")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 200)
+offset_top = 150.0
+offset_right = 1920.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_dj5da")
+theme_override_font_sizes/font_size = 50
+text = "Select Your Teams"
+horizontal_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="."]
+offset_left = 50.0
+offset_top = 450.0
+offset_right = 650.0
+offset_bottom = 650.0
+theme_override_font_sizes/font_size = 50
+alignment = 1
+item_count = 2
+popup/item_0/text = "Arizona Almighty"
+popup/item_0/id = 0
+popup/item_1/text = "Snake Oli Merchants"
+popup/item_1/id = 1
+
+[node name="OptionButton2" type="OptionButton" parent="."]
+offset_left = 1270.0
+offset_top = 450.0
+offset_right = 1870.0
+offset_bottom = 650.0
+theme_override_font_sizes/font_size = 50
+alignment = 1
+item_count = 2
+popup/item_0/text = "Arizona Almighty"
+popup/item_0/id = 0
+popup/item_1/text = "Snake Oli Merchants"
+popup/item_1/id = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 660.0
+offset_top = 800.0
+offset_right = 1260.0
+offset_bottom = 1000.0
+theme_override_font_sizes/font_size = 80
+text = "Begin Match"
+
+[node name="Button2" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Return to Main"
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]

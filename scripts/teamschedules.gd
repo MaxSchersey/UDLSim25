@@ -4,7 +4,50 @@ var array2Dregularseason = []
 var array2Dteamschedule = []
 var array2Dpostseason = []
 
-var TeamIDDict = {
+var TeamForID = {
+	"1": "Arizona Almighty",
+	"2": "Snake Oli Merchants",
+	"3": "6:16 in Seattle",
+	"4": "Baba Keke Jiji and Fofo",
+	"5": "Hardcore Parkour",
+	"6": "Meet n' Falc Kingdom",
+	"7": "BIG PLACEHOLDER",
+	"8": "Dream Big, Fart Loud",
+	"9": "Pokeymons",
+	"10": "Coffin Fitters",
+	"11": "In the Flow State",
+	"12": "Brendini's Genies",
+	"13": "NPC Adventure Rescue Squad",
+	"14": "Stardenburdenhardenbart",
+	"15": "BlazeBallin: Peak Fiction",
+	"16": "Da Frizzadonkeys",
+	"17": "On Mah Son",
+	"18": "The Ballin' Association",
+	"19": "The Bone Rattlers",
+	"20": "Based Opinions",
+	"21": "Saturday Morning Cartoons",
+	"22": "Taskmasters III",
+	"23": "Goku's Katnisses",
+	"24": "Over-Day Out Death",
+	"25": "DondoIt",
+	"26": "The Logical Endpoint of Man's Hubris",
+	"27": "Toilet Crusaders",
+	"28": "The Marios",
+	"29": "Wagwan University",
+	"30": "Orange You Glad",
+	"31": "Modified Memories",
+	"32": "Mike's Money Makers",
+	"33": "Trickle Down-Smash Economics",
+	"34": "Nine Lives in Ninjutsu",
+	"35": "Mom Doers",
+	"36": "Suomi Blimp Squadron",
+	"37": "A Maglev into the Inner Machinations of God",
+	"38": "Smeten",
+	"39": "Filidutter",
+	"40": "The Sheikah Shadows"
+}
+
+var IDForTeam = {
 	"Arizona Almighty": 1,
 	"Snake Oli Merchants": 2,
 	"6:16 in Seattle": 3,
@@ -121,7 +164,11 @@ func get_teamschedule(RowCount, ColumnCount):
 
 func get_team_ID(Name):
 	#print("Team: " + Name + ", ID: " + str(TeamIDDict[Name]))
-	return TeamIDDict[Name]
+	return IDForTeam[Name]
+
+func get_team_name(ID):
+	#print("Team ID: " + str(ID) + " Name: " + TeamForID[str(ID)])
+	return TeamForID[str(ID)]
 
 func init_season_schedule():
 	set_schedule(1, "Coffin Fitters", "Orange You Glad")
@@ -398,7 +445,7 @@ func init_season_schedule():
 	set_teamschedule(31, "Modified Memories", 18, 24, 41, 75, 97, 119, 140, 158, 166, 185, 212, 237)
 	set_teamschedule(32, "Mike's Money Makers", 19, 35, 60, 63, 99, 118, 148, 154, 164, 199, 218, 239)
 	set_teamschedule(33, "Trickle Down-Smash Economics", 7, 38, 43, 63, 89, 108, 122, 149, 168, 194, 212, 229)
-	set_teamschedule(34, "Nine Lives in Ninjutsu", 9, 23, 58, 76, 95, 112, 125, 153, 168, 95, 218, 237)
+	set_teamschedule(34, "Nine Lives in Ninjutsu", 9, 23, 58, 76, 95, 112, 125, 153, 168, 195, 218, 237)
 	set_teamschedule(35, "Mom Doers", 14, 30, 48, 75, 90, 108, 125, 142, 164, 182, 205, 231)
 	set_teamschedule(36, "Suomi Blimp Squadron", 15, 34, 57, 76, 83, 115, 121, 157, 173, 199, 219, 240)
 	set_teamschedule(37, "A Maglev into the Inner Machinations of God", 20, 28, 48, 73, 86, 105, 136, 148, 170, 200, 219, 239)

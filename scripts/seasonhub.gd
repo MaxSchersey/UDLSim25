@@ -429,8 +429,20 @@ func find_postseason_match():
 		get_tree().change_scene_to_file("res://scenes/matchdisplay.tscn")
 
 func _on_button_2_button_up() -> void:
+	Rosters.set_lineup(Global.Team1, "Singles", Rosters.get_roster(Schedule.get_team_ID(Global.Team1) - 1, 1))
+	Rosters.set_lineup(Global.Team1, "Final Smash", Rosters.get_roster(Schedule.get_team_ID(Global.Team1) - 1, 2))
+	Rosters.set_lineup(Global.Team1, "Stamina", Rosters.get_roster(Schedule.get_team_ID(Global.Team1) - 1, 3))
+	Rosters.set_lineup(Global.Team1, "Doubles1", Rosters.get_roster(Schedule.get_team_ID(Global.Team1) - 1, 4))
+	Rosters.set_lineup(Global.Team1, "Doubles2", Rosters.get_roster(Schedule.get_team_ID(Global.Team1) - 1, 5))
+	Rosters.set_lineup(Global.Team1, "Squads1", Rosters.get_roster(Schedule.get_team_ID(Global.Team1) - 1, 6))
+	Rosters.set_lineup(Global.Team1, "Squads2", Rosters.get_roster(Schedule.get_team_ID(Global.Team1) - 1, 7))
+	Rosters.set_lineup(Global.Team1, "Squads3", Rosters.get_roster(Schedule.get_team_ID(Global.Team1) - 1, 8))
+	Rosters.set_lineup(Global.Team1, "Bench", Rosters.get_roster(Schedule.get_team_ID(Global.Team1) - 1, 9))
 	Global.Team1 = "Default"
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+
+func _on_lineup_mgmt_button_up() -> void:
+	get_tree().change_scene_to_file("res://scenes/editlineup.tscn")
 
 func _on_full_standings_button_up() -> void:
 	get_tree().change_scene_to_file("res://scenes/leaguestandings.tscn")
@@ -451,15 +463,16 @@ func _on_advance_button_up() -> void:
 		Playoffs.set_playoff_pool()
 		Schedule.init_wk13_schedule()
 		
+		MatchSim.setup_match(Schedule.get_schedule(241, 0), Schedule.get_schedule(241, 1))
+		MatchSim.setup_match(Schedule.get_schedule(242, 0), Schedule.get_schedule(242, 1))
+		MatchSim.setup_match(Schedule.get_schedule(243, 0), Schedule.get_schedule(243, 1))
+		MatchSim.setup_match(Schedule.get_schedule(244, 0), Schedule.get_schedule(244, 1))
+		MatchSim.setup_match(Schedule.get_schedule(245, 0), Schedule.get_schedule(245, 1))
+		MatchSim.setup_match(Schedule.get_schedule(246, 0), Schedule.get_schedule(246, 1))
+		MatchSim.setup_match(Schedule.get_schedule(247, 0), Schedule.get_schedule(247, 1))
+		MatchSim.setup_match(Schedule.get_schedule(248, 0), Schedule.get_schedule(248, 1))
+		
 		if Playoffs.get_playoff_pool(Global.Team1Conference, 0) ==  Global.Team1 or Playoffs.get_playoff_pool(Global.Team1Conference, 1) ==  Global.Team1 or Playoffs.get_playoff_pool(Global.Team1Conference, 2) ==  Global.Team1 or Playoffs.get_playoff_pool(Global.Team1Conference, 3) ==  Global.Team1 or Playoffs.get_playoff_pool(Global.Team1Conference, 4) ==  Global.Team1 or Playoffs.get_playoff_pool(Global.Team1Conference, 5) ==  Global.Team1 or Playoffs.get_playoff_pool(Global.Team1Conference, 6) ==  Global.Team1 or Playoffs.get_playoff_pool(Global.Team1Conference, 7) ==  Global.Team1: 
-			MatchSim.setup_match(Schedule.get_schedule(241, 0), Schedule.get_schedule(241, 1))
-			MatchSim.setup_match(Schedule.get_schedule(242, 0), Schedule.get_schedule(242, 1))
-			MatchSim.setup_match(Schedule.get_schedule(243, 0), Schedule.get_schedule(243, 1))
-			MatchSim.setup_match(Schedule.get_schedule(244, 0), Schedule.get_schedule(244, 1))
-			MatchSim.setup_match(Schedule.get_schedule(245, 0), Schedule.get_schedule(245, 1))
-			MatchSim.setup_match(Schedule.get_schedule(246, 0), Schedule.get_schedule(246, 1))
-			MatchSim.setup_match(Schedule.get_schedule(247, 0), Schedule.get_schedule(247, 1))
-			MatchSim.setup_match(Schedule.get_schedule(248, 0), Schedule.get_schedule(248, 1))
 			find_postseason_match()
 		else:
 			print(Playoffs.array2Dalphacombined)
@@ -470,11 +483,12 @@ func _on_advance_button_up() -> void:
 		Schedule.init_wk14_schedule()
 		#Playoffs Quarterfinals
 		
+		MatchSim.setup_match(Schedule.get_schedule(249, 0), Schedule.get_schedule(249, 1))
+		MatchSim.setup_match(Schedule.get_schedule(250, 0), Schedule.get_schedule(250, 1))
+		MatchSim.setup_match(Schedule.get_schedule(251, 0), Schedule.get_schedule(251, 1))
+		MatchSim.setup_match(Schedule.get_schedule(252, 0), Schedule.get_schedule(252, 1))
+		
 		if Playoffs.get_round_2(Global.Team1Conference, 0) == Global.Team1 or Playoffs.get_round_2(Global.Team1Conference, 1) == Global.Team1 or Playoffs.get_round_2(Global.Team1Conference, 2) == Global.Team1 or Playoffs.get_round_2(Global.Team1Conference, 3) == Global.Team1:
-			MatchSim.setup_match(Schedule.get_schedule(249, 0), Schedule.get_schedule(249, 1))
-			MatchSim.setup_match(Schedule.get_schedule(250, 0), Schedule.get_schedule(250, 1))
-			MatchSim.setup_match(Schedule.get_schedule(251, 0), Schedule.get_schedule(251, 1))
-			MatchSim.setup_match(Schedule.get_schedule(252, 0), Schedule.get_schedule(252, 1))
 			find_postseason_match()
 		else:
 			print(Playoffs.array2Dalpharound2)
@@ -485,9 +499,10 @@ func _on_advance_button_up() -> void:
 		Schedule.init_wk15_schedule()
 		#Playoffs Semifinals
 		
+		MatchSim.setup_match(Schedule.get_schedule(253, 0), Schedule.get_schedule(253, 1))
+		MatchSim.setup_match(Schedule.get_schedule(254, 0), Schedule.get_schedule(254, 1))
+		
 		if Playoffs.get_round_3(Global.Team1Conference, 0) == Global.Team1 or Playoffs.get_round_3(Global.Team1Conference, 1) == Global.Team1:
-			MatchSim.setup_match(Schedule.get_schedule(253, 0), Schedule.get_schedule(253, 1))
-			MatchSim.setup_match(Schedule.get_schedule(254, 0), Schedule.get_schedule(254, 1))
 			find_postseason_match()
 		else:
 			print(Playoffs.array2Dalpharound3)
@@ -498,8 +513,9 @@ func _on_advance_button_up() -> void:
 		Schedule.init_wk16_schedule()
 		#Playoffs Finals
 		
+		MatchSim.setup_match(Schedule.get_schedule(255, 0), Schedule.get_schedule(255, 1))
+		
 		if Playoffs.get_round_4(0) == Global.Team1 or Playoffs.get_round_4(1) == Global.Team1:
-			MatchSim.setup_match(Schedule.get_schedule(255, 0), Schedule.get_schedule(255, 1))
 			find_postseason_match()
 		else:
 			print(Playoffs.array2Dplayofffinals)

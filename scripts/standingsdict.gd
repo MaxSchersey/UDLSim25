@@ -1,5 +1,10 @@
 extends Node
 
+var tempname1
+var tempwins1
+var tempname2
+var tempwins2
+
 var StandingsDictWins = {
 	"Arizona Almighty": 0,
 	"Snake Oli Merchants": 0,

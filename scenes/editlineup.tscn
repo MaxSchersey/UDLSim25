@@ -1,0 +1,287 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjid53f5hyujs"]
+
+[ext_resource type="Script" path="res://scripts/editlineup.gd" id="1_r1khu"]
+
+[sub_resource type="SystemFont" id="SystemFont_j5b1q"]
+font_names = PackedStringArray("Segoe UI")
+
+[sub_resource type="LabelSettings" id="LabelSettings_nt68w"]
+font = SubResource("SystemFont_j5b1q")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_sbdht"]
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[node name="EditLineup" type="Node2D"]
+script = ExtResource("1_r1khu")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Edit Lineup"
+label_settings = SubResource("LabelSettings_nt68w")
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Return to Season Hub"
+
+[node name="Subheader" type="HBoxContainer" parent="."]
+offset_top = 150.0
+offset_right = 1920.0
+offset_bottom = 330.0
+
+[node name="Label" type="Label" parent="Subheader"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Each position must be filled by a unique character to continue"
+label_settings = SubResource("LabelSettings_sbdht")
+horizontal_alignment = 1
+
+[node name="First9" type="VBoxContainer" parent="."]
+offset_top = 320.0
+offset_right = 960.0
+offset_bottom = 1080.0
+
+[node name="ColorRect" type="ColorRect" parent="First9"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match1" type="Label" parent="First9/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Singles"
+
+[node name="ColorRect2" type="ColorRect" parent="First9"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match2" type="Label" parent="First9/ColorRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Final Smash"
+
+[node name="ColorRect3" type="ColorRect" parent="First9"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match3" type="Label" parent="First9/ColorRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Stamina"
+
+[node name="ColorRect4" type="ColorRect" parent="First9"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match4" type="Label" parent="First9/ColorRect4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Doubles"
+
+[node name="ColorRect5" type="ColorRect" parent="First9"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match5" type="Label" parent="First9/ColorRect5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Doubles"
+
+[node name="ColorRect6" type="ColorRect" parent="First9"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match6" type="Label" parent="First9/ColorRect6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Squad Strike"
+
+[node name="ColorRect7" type="ColorRect" parent="First9"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match7" type="Label" parent="First9/ColorRect7"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Squad Strike"
+
+[node name="ColorRect8" type="ColorRect" parent="First9"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match8" type="Label" parent="First9/ColorRect8"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Squad Strike"
+
+[node name="ColorRect9" type="ColorRect" parent="First9"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Match9" type="Label" parent="First9/ColorRect9"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Bench"
+
+[node name="Last9" type="VBoxContainer" parent="."]
+offset_left = 960.0
+offset_top = 320.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="OptionButton" type="OptionButton" parent="Last9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 9
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_5/id = 5
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_8/id = 8
+
+[node name="OptionButton2" type="OptionButton" parent="Last9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 9
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_5/id = 5
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_8/id = 8
+
+[node name="OptionButton3" type="OptionButton" parent="Last9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 9
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_5/id = 5
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_8/id = 8
+
+[node name="OptionButton4" type="OptionButton" parent="Last9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 9
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_5/id = 5
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_8/id = 8
+
+[node name="OptionButton5" type="OptionButton" parent="Last9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 9
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_5/id = 5
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_8/id = 8
+
+[node name="OptionButton6" type="OptionButton" parent="Last9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 9
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_5/id = 5
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_8/id = 8
+
+[node name="OptionButton7" type="OptionButton" parent="Last9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 9
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_5/id = 5
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_8/id = 8
+
+[node name="OptionButton8" type="OptionButton" parent="Last9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 9
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_5/id = 5
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_8/id = 8
+
+[node name="OptionButton9" type="OptionButton" parent="Last9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+item_count = 9
+popup/item_1/id = 1
+popup/item_2/id = 2
+popup/item_3/id = 3
+popup/item_4/id = 4
+popup/item_5/id = 5
+popup/item_6/id = 6
+popup/item_7/id = 7
+popup/item_8/id = 8
+
+[connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]

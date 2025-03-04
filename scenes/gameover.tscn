@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c0tdyhxnf3woc"]
 
-[ext_resource type="Script" path="res://scripts/click2return.gd" id="1_cn4l6"]
+[ext_resource type="Script" path="res://scripts/click2return2.gd" id="1_i4nwm"]
 
 [sub_resource type="SystemFont" id="SystemFont_c0pxv"]
 font_names = PackedStringArray("Segoe UI")
@@ -15,7 +15,7 @@ font_color = Color(0, 0, 0, 1)
 font_names = PackedStringArray("Segoe UI")
 
 [node name="Gameover" type="Node2D"]
-script = ExtResource("1_cn4l6")
+script = ExtResource("1_i4nwm")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1920.0
@@ -40,5 +40,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("SystemFont_qiydl")
 theme_override_font_sizes/font_size = 25
 text = "
-Click to return to main menu"
+LMB to return to main menu
+
+RMB to return to season hub and see this round's results (unavailable after conclusion of season)"
 horizontal_alignment = 1

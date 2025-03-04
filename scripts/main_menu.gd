@@ -5,7 +5,6 @@ extends Node
 func _ready():
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
@@ -15,6 +14,9 @@ func _on_button_1_button_up():
 
 func _on_button_2_button_up():
 	get_tree().change_scene_to_file("res://scenes/quickplayinit.tscn")
+
+func _on_button_5_button_up() -> void:
+	get_tree().change_scene_to_file("res://scenes/rules.tscn")
 
 func _on_button_3_button_up():
 	get_tree().change_scene_to_file("res://scenes/feature_roadmap.tscn")

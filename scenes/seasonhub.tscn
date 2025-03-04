@@ -394,6 +394,7 @@ size_flags_horizontal = 3
 text = "Start Next Match"
 
 [connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]
+[connection signal="button_up" from="Bottom - Buttons/LineupMgmt" to="." method="_on_lineup_mgmt_button_up"]
 [connection signal="button_up" from="Bottom - Buttons/FullStandings" to="." method="_on_full_standings_button_up"]
 [connection signal="button_up" from="Bottom - Buttons/Scorecards" to="." method="_on_scorecards_button_up"]
 [connection signal="button_up" from="Bottom - Buttons/Advance" to="." method="_on_advance_button_up"]

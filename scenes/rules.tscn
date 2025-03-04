@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8apaifjfsdxx"]
+
+[ext_resource type="Script" path="res://scripts/click2return.gd" id="1_oyhnq"]
+
+[sub_resource type="SystemFont" id="SystemFont_c0pxv"]
+font_names = PackedStringArray("Segoe UI")
+
+[sub_resource type="LabelSettings" id="LabelSettings_s0nhl"]
+font = SubResource("SystemFont_c0pxv")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_flman"]
+font_names = PackedStringArray("Segoe UI")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_oyhnq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Rules"
+label_settings = SubResource("LabelSettings_s0nhl")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_top = 156.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_flman")
+theme_override_font_sizes/font_size = 25
+text = "Current simulator rules are as of v0.2; see About for conceptual basics of Ultimate Draft League that may not be covered here. These rules may differ than UDL actuals.
+
+Each team's schedule matches their schedule from the 2024 UDL season, comprised of four divisional matches, 
+five conference matches (two matches for two interconference divisions and one match for the remaining interconference division), 
+and three out-of-conference matches. One of the conference or out-of-conference matches will be considered a protected rivalry match.
+
+After the completion of each week, divisional standings are sorted based on total wins, with the previous week's placement used as a tiebreaker.
+All teams not currently leading their division are then sorted within their conference's wild card standings, also based on total wins first and
+previous week second. Following Week 12 when playoff teams are finalized, any team currently in second place in their division but tied with
+the first place team in wins will use score differential as a tiebreaker for determining the division winner. This differential tiebreaker is also used
+if the fourth and fifth place wild card teams are tied following the final post-division sort.
+
+The playoff bracket consists of fixed 1-8 seeding in each conference, with the 1-4 seeds being sorted based on total wins first and divisional
+placement second (for example, the Burrito Division claims the top priority on this tiebreaker for the Alpha Conference, 
+while the Carbomb Division claims the bottom priority). 4-8 seeds are determined by the final post-Week 12 conference wild card standings.
+
+Click to return to main menu"
+horizontal_alignment = 1

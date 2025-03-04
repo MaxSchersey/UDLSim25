@@ -43,6 +43,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 100
 text = "Quickplay"
 
+[node name="Button5" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Rules"
+
 [node name="Button3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 100
@@ -55,5 +60,6 @@ text = "About"
 
 [connection signal="button_up" from="VBoxContainer/Button1" to="." method="_on_button_1_button_up"]
 [connection signal="button_up" from="VBoxContainer/Button2" to="." method="_on_button_2_button_up"]
+[connection signal="button_up" from="VBoxContainer/Button5" to="." method="_on_button_5_button_up"]
 [connection signal="button_up" from="VBoxContainer/Button3" to="." method="_on_button_3_button_up"]
 [connection signal="button_up" from="VBoxContainer/Button4" to="." method="_on_button_4_button_up"]

@@ -38,9 +38,9 @@ offset_bottom = 1080.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("SystemFont_flman")
 theme_override_font_sizes/font_size = 25
-text = "Version 0.1, Released 12/29/24
+text = "Version 0.2, Released 3/3/25
 
-The goal of this project is to create a dynamic, infinite \"spreadsheet simulator\" based on the SmashCPU Ultimate Draft League (\"UDL\").
+The long-term goal of this project is to create a dynamic, infinite \"spreadsheet simulator\" based on the SmashCPU Ultimate Draft League (\"UDL\").
 
 Each team in the UDL rosters nine Smash Ultimate CPU characters, of which eight must be included in a lineup and one placed on the bench, per
 matchup against another team during the course of the season.
@@ -51,7 +51,7 @@ These eight characters are to be placed into five distinct events: Singles, Fina
 40 teams are in the league, divided into 8 divisions within 2 conferences, each with their own schedules. Four division winners and four wild card
 teams per conference make the playoffs.
 
-This simulator may operate on different rules than the actual UDL at times.
+This simulator may operate on different rules than the actual UDL at times; see Rules for more detail.
 
 Click to return to main menu"
 horizontal_alignment = 1

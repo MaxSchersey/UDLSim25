@@ -41,22 +41,22 @@ theme_override_fonts/font = SubResource("SystemFont_1hbtt")
 theme_override_font_sizes/font_size = 25
 text = "Patch Notes/Upcoming Feature Priority:
 
-**PHASE 1 CHANGES** (Probably)
-- Lineup Management
-- Playoff Berth Logic Updates
-- Rules Glossary
-- Audio/Visual Updates
+**V0.1 TO V0.2 CHANGES**
+- Change Lineup is now functional
+- An option has been added to return to season mode after being eliminated
+- Added Rules page
+- Backend code cleanup
 
 **PHASE 2 CHANGES** (Possibly)
-- Forced Bench for Each Slot
-- Dynamic Schedules
-- Free Agency
-- Trading
+- Audio/Visual Updates
+- Playoff Berth Logic Updates
+- Beginning Table Value Customization
+- Mobile Support
 
 **PHASE 3 CHANGES** (The Dream)
-- Opponent Coach AI 
-- Preseason Draft
-- Saving
+- Forced Bench for Each Slot
+- Dynamic Schedules
+- Far Future Stuff (Free Agency, Trading, Opponent Coach AI , Preseason Draft, Saving)
 
 Click to return to main menu"
 horizontal_alignment = 1
